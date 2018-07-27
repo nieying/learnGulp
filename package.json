@@ -4,7 +4,11 @@
   "description": "learn gulp",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp dev",
+    "dev": "rimraf dist && gulp dev",
+    "clean": "rimraf dist",
+    "build": "rimraf dist && gulp build"
   },
   "repository": {
     "type": "git",
@@ -19,7 +23,19 @@
     "url": "https://github.com/nieying/learnGulp/issues"
   },
   "homepage": "https://github.com/nieying/learnGulp#readme",
-  "dependencies": {
-    "gulp": "^3.9.1"
+  "devDependencies": {
+    "browser-sync": "^2.24.6",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.0.0",
+    "gulp-uglify": "^2.0.0",
+    "jshint": "^2.9.4"
   }
 }
