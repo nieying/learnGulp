@@ -9,7 +9,7 @@ var gulpConfig = {
     src: SRC_DIR + '*.html',
     dist: DIST_DIR
   },
-
+ 
   css: {
     src: SRC_DIR + 'assets/css/*',
     dist: DIST_DIR + 'assets/css',
